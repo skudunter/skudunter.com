@@ -6,8 +6,7 @@ function HomePage() {
   useEffect(() => {
     let canvas: any = document.getElementById("gameCanvas");
     var ctx = canvas.getContext("2d");
-    // let element = document.querySelector("#root > header").scrollHeight;
-    let element = 300;
+    let element = document.querySelector("body > header")!.scrollHeight;
     let width = window.innerWidth / 40;
     let height = window.innerHeight / 5;
     let radius = (window.innerHeight + window.innerWidth) / 100;
@@ -19,7 +18,7 @@ function HomePage() {
 
     window.addEventListener("resize", () => {
       canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight - element;
+      canvas.height = window.innerHeight - document.querySelector("body > header")!.scrollHeight;;
       radius = (window.innerHeight + window.innerWidth) / 100;
       width = canvas.width / 40;
 
