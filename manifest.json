@@ -1,0 +1,21 @@
+{
+    "name": "Skudunter's Place On The Web",
+    "short_name": "Skudunter's Place",
+    "description": "A website for myself",
+    "icons": [
+      {
+        "src": "/images/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fafafc",
+    "theme_color": "#fafafc"
+  }
