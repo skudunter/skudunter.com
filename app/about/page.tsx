@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-// import ContactForm from './ContactForm';
+import ContactForm from "../_components/contactForm";
 
 function AboutPage() {
   useEffect(() => {
@@ -234,7 +234,7 @@ function AboutPage() {
         <h1 className="text-center font-bold text-white my-16 pt-10 text-5xl">
           Contact me
         </h1>
-        {/* <ContactForm /> */}
+        <ContactForm />
       </article>
     </>
   );

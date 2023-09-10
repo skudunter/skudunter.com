@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, ChangeEvent, FormEvent } from "react";
-import LoadingSpinner from "./loadingSpinner";
+// import LoadingSpinner from "./loadingSpinner";
 
 interface FormData {
   name: string;
@@ -171,7 +171,7 @@ export default function ContactForm() {
               style={{ width: sending ? "80px" : "160px" }}
               disabled
             >
-              <LoadingSpinner />
+              {/* <LoadingSpinner /> */}
             </button>
           ) : (
             <button
