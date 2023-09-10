@@ -1,5 +1,5 @@
-'use client'
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import {Helmet} from "react-helmet";
 
 function HomePage() {
   useEffect(() => {
@@ -124,6 +124,9 @@ function HomePage() {
   });
   return (
     <>
+      <Helmet>
+        <title>Skudunter's place on the web</title>
+      </Helmet>
       <article>
         <span className="fixed justify-center w-full mr-10 space-x-2 flex z-10 mt-1 xs:justify-end sm:right-3 sm:bottom-3 select-none">
           <a href="/app/pages/coming.html">
