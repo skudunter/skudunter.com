@@ -1,6 +1,8 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-function determineCaption(path) {
+function determineCaption(path: string) {
   if (
     path === "/" ||
     path === "/about" ||
@@ -15,46 +17,44 @@ function determineCaption(path) {
   }
 }
 function NavigationBar() {
-  const location = useLocation();
+  const location = usePathname();
   return (
     <>
       <header className="py-4 sm:py-6 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <Link to="/" className="text-2xl sm:text-4xl font-semibold">
-            {determineCaption(location.pathname)}
+          <Link href="/" className="text-2xl sm:text-4xl font-semibold">
+            {determineCaption(location)}
           </Link>
           <nav className="hidden sm:block">
             <ul className="flex justify-center space-x-6">
               <li
                 className={`transition ease-in-out hover:text-secondary  duration-500  ${
-                  location.pathname === "/" ? "underline" : ""
+                  location === "/" ? "underline" : ""
                 }`}
               >
-                <Link className="text-lg sm:text-xl" to="/">
+                <Link className="text-lg sm:text-xl" href="/">
                   Home
                 </Link>
               </li>
               <li
                 className={`transition ease-in-out hover:text-secondary  duration-500  ${
-                  location.pathname === "/portfolio" ||
-                  location.pathname === "/portfolio/"
+                  location === "/portfolio" || location === "/portfolio/"
                     ? "underline"
                     : ""
                 }`}
               >
-                <Link className="text-lg sm:text-xl" to="/portfolio">
+                <Link className="text-lg sm:text-xl" href="/portfolio">
                   Portfolio
                 </Link>
               </li>
               <li
                 className={`transition ease-in-out hover:text-secondary  duration-500  ${
-                  location.pathname === "/about" ||
-                  location.pathname === "/about/"
+                  location === "/about" || location === "/about/"
                     ? "underline"
                     : ""
                 }`}
               >
-                <Link className="text-lg sm:text-xl" to="/about">
+                <Link className="text-lg sm:text-xl" href="/about">
                   About
                 </Link>
               </li>
@@ -62,7 +62,6 @@ function NavigationBar() {
           </nav>
         </div>
       </header>
-      <Outlet />
     </>
   );
 }
