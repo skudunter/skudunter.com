@@ -1,11 +1,13 @@
-'use client'
+"use client";
 import { useEffect } from "react";
+import Image from "next/image";
 
 function HomePage() {
   useEffect(() => {
-    var canvas = document.getElementById("gameCanvas");
+    let canvas: any = document.getElementById("gameCanvas");
     var ctx = canvas.getContext("2d");
-    let element = document.querySelector("#root > header").scrollHeight;
+    // let element = document.querySelector("#root > header").scrollHeight;
+    let element = 300;
     let width = window.innerWidth / 40;
     let height = window.innerHeight / 5;
     let radius = (window.innerHeight + window.innerWidth) / 100;
@@ -17,18 +19,9 @@ function HomePage() {
 
     window.addEventListener("resize", () => {
       canvas.width = window.innerWidth;
-      canvas.height =
-        window.innerHeight -
-        document.querySelector("#root > header").clientHeight;
+      canvas.height = window.innerHeight - element;
       radius = (window.innerHeight + window.innerWidth) / 100;
       width = canvas.width / 40;
-
-      p1 = new paddle(10, canvas.height / 2 - height / 2);
-      p2 = new paddle(
-        canvas.width - width - 10,
-        canvas.height / 2 - height / 2
-      );
-      bll = new ball(canvas.width / 2, canvas.height / 2);
 
       if (width < 20) {
         width = 20;
@@ -39,8 +32,10 @@ function HomePage() {
       }
     });
 
-    class paddle {
-      constructor(x, y) {
+    class Paddle {
+      y: number;
+      x: number;
+      constructor(x: number, y: number) {
         this.y = y;
         this.x = x;
       }
@@ -49,8 +44,13 @@ function HomePage() {
         ctx.fillRect(this.x, this.y, width, height);
       }
     }
-    class ball {
-      constructor(x, y) {
+    class Ball {
+      x: number;
+      r: number;
+      y: number;
+      vx: number;
+      vy: number;
+      constructor(x: number, y: number) {
         this.x = x;
         this.y = y;
         this.r = radius;
@@ -85,12 +85,12 @@ function HomePage() {
       }
     }
 
-    let p1 = new paddle(10, canvas.height / 2 - height / 2);
-    let p2 = new paddle(
+    let p1: Paddle = new Paddle(10, canvas.height / 2 - height / 2);
+    let p2: Paddle = new Paddle(
       canvas.width - width - 10,
       canvas.height / 2 - height / 2
     );
-    let bll = new ball(canvas.width / 2, canvas.height / 2);
+    let bll: Ball = new Ball(canvas.width / 2, canvas.height / 2);
 
     p1.show();
     p2.show();
@@ -127,24 +127,30 @@ function HomePage() {
       <article>
         <span className="fixed justify-center w-full mr-10 space-x-2 flex z-10 mt-1 xs:justify-end sm:right-3 sm:bottom-3 select-none">
           <a href="/app/pages/coming.html">
-            <img
+            <Image
               alt="youtube"
               className="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-20 sm:h-20"
               src="../images/youtube.svg"
+              width={600}
+              height={600}
             />
           </a>
           <a href="https://github.com/skudunter">
-            <img
+            <Image
               alt="github"
               className="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-20 sm:h-20"
               src="../images/github.svg"
+              width={600}
+              height={600}
             />
           </a>
           <a href="https://skudunter.itch.io/">
-            <img
+            <Image
               alt="itch.io"
               className="w-7 h-7 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16 mt-2"
               src="../images/itchio-textless-white.svg"
+              width={600}
+              height={600}
             />
           </a>
         </span>
