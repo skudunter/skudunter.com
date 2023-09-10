@@ -124,8 +124,8 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleInputChange}
           className={`w-full px-2 py-1 text-primary rounded-sm focus:outline-none ${
-            formData.sent ? "border-quad border-4" : ""
-          } ${formErrors.nameError ? "border-4 border-quint" : ""}`}
+            formData.sent ? "border-secondary border-4" : ""
+          } ${formErrors.nameError ? "border-4 border-quad" : ""}`}
         />
         <label
           htmlFor="from_email"
@@ -141,8 +141,8 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleInputChange}
           className={`w-full px-2 py-1 text-primary rounded-sm focus:outline-none ${
-            formData.sent ? "border-quad border-4" : ""
-          } ${formErrors.emailError ? "border-4 border-quint" : ""}`}
+            formData.sent ? "border-secondary border-4" : ""
+          } ${formErrors.emailError ? "border-4 border-quad" : ""}`}
         />
         <label
           htmlFor="message"
@@ -157,15 +157,15 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleInputChange}
           className={`w-full px-2 py-1 text-primary rounded-sm focus:outline-none ${
-            formData.sent ? "border-quad border-4" : ""
-          } ${formErrors.messageError ? "border-4 border-quint" : ""}`}
+            formData.sent ? "border-secondary border-4" : ""
+          } ${formErrors.messageError ? "border-4 border-quad" : ""}`}
           maxLength={50}
         ></textarea>
         <div className="text-center mt-6">
           {sending ? (
             <button
               type="submit"
-              className={`relative text-tersiary text-center font-bold border-4 border-tersiary bg-transparent p-2 ${
+              className={`relative text-tersiary text-center font-bold rounded-md border-4 border-tersiary bg-transparent p-2 ${
                 sending ? "w-20 h-20" : "w-40 h-12"
               }`}
               style={{ width: sending ? "80px" : "160px" }}
@@ -176,7 +176,7 @@ export default function ContactForm() {
           ) : (
             <button
               type="submit"
-              className={`hover:text-primary hover:bg-tersiary transition ease-in-out duration-300 text-tersiary text-center font-bold border-4 border-tersiary bg-transparent p-2 ${
+              className={`hover:text-primary hover:bg-tersiary transition ease-in-out duration-300 rounded-md text-tersiary text-center font-bold border-4 border-tersiary bg-transparent p-2 ${
                 sending ? "w-20 h-20" : "w-40 h-12"
               }`}
               style={{ width: sending ? "80px" : "160px" }}

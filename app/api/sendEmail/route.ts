@@ -27,7 +27,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
     const mailOptions = {
       from: fromEmail,
       to: process.env.NODEMAILER_USERNAME,
-      subject: `Response From Visometer By: ${name}`,
+      subject: `Response From Skudunter.com By: ${name}`,
       text: "Your message goes here",
       html: `
       <!DOCTYPE html>
@@ -63,7 +63,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
       </head>
       <body>
         <div class="container">
-        <h1>You've received a response from Visometer:</h1>
+        <h1>You've received a response from Skudunter.com:</h1>
           <h2>From: ${name || "User"}</h2>
           <p>${message || "No message content provided."}</p>
         </div>

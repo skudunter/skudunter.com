@@ -18,6 +18,8 @@ const config: Config = {
         primary: "#32373B",
         secondary: "#04F06A",
         tersiary: "#ABEBD2",
+        quad: "#DA4167",
+        quint: "#D3C1C3",
       },
       fontFamily: {
         Roboto: ["'Roboto'", "serif"],
