@@ -21,7 +21,7 @@ export function ProjectBlooper(props: ProjectBlooperProps) {
       >
         <div className="flex h-setHeight p-0">
           <Image
-            src={"/" + props.image}
+            src={"/images/" + props.image}
             alt="the cover page of one of my projects that I have worked on"
             width={1200}
             height={1200}

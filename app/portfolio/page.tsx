@@ -10,7 +10,7 @@ export default function PortfolioPage() {
           <li>
             <ProjectBlooper
               fileName="tank"
-              image="./images/tanks.png"
+              image="tanks.png"
               title="Express  Tanks"
               description="A Multiplayer game made using node-js,express and websocket.io,complete with weappn upgrades and powerups."
               tag={[
@@ -29,8 +29,28 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
+              fileName="kaboom-multiplayer-game"
+              image="kaboom-multiplayer-game.png"
+              title="Kaboom"
+              description="Get ready to rumble in Kaboom Local Multiplayer Game, where two robots go head-to-head in explosive battles! 🤖💥"
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
               fileName="https://imgtoascii-51d7b.web.app/"
-              image="./images/imgtoascii-example.png"
+              image="imgtoascii-example.png"
               title="Image to ASCII"
               description="Software that takes in an image as input and allows you to turn it into a ascii version aswell as allowing control of other settings."
               tag={[
@@ -45,7 +65,7 @@ export default function PortfolioPage() {
           <li>
             <ProjectBlooper
               fileName="momentum"
-              image="./images/momentum.png"
+              image="momentum.png"
               title="MOMENTUM"
               description="My first 3D Unity game,made by following the Brackeys tutorial and then adding some artistic touch,with procedural level generation."
               tag={[
@@ -60,7 +80,7 @@ export default function PortfolioPage() {
           <li>
             <ProjectBlooper
               fileName="yt-shorts-bot"
-              image="./images/yt-shorts-bot.png"
+              image="yt-shorts-bot.png"
               title="Youtube shorts bot"
               description="A script that scrapes reddit,uses text-to-speech and ffmpeg to (sometimes) create a youtube shorts format video."
               tag={[
