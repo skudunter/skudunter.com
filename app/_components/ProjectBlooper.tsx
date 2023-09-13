@@ -1,7 +1,13 @@
 import Image from "next/image";
-import  ProjectTag  from "../_components/ProjectTag";
-
-export function ProjectBlooper(props: any) {
+import ProjectTag from "../_components/ProjectTag";
+type ProjectBlooperProps = {
+  href: string;
+  image: string;
+  title: string;
+  description: string;
+  tag?: Array<{ title: string ,mainColor:string,textColor:string}>;
+};
+export function ProjectBlooper(props: ProjectBlooperProps) {
   const values = props.tag;
   return (
     <article className="bg-tersiary rounded-2xl text-primary transition ease-in duration-300 h-full hover:scale-102">
@@ -26,7 +32,8 @@ export function ProjectBlooper(props: any) {
                 key={index}
                 mainColor={value.mainColor}
                 textColor={value.textColor}
-                title={value.title} />
+                title={value.title}
+              />
             ))}
         </div>
       </a>

@@ -1,11 +1,14 @@
-
-export default function ProjectTag({
-  title, mainColor, textColor,
-}: {
+type ProjectTypeProps = {
   title: string;
   mainColor: string;
   textColor: string;
-}) {
+};
+
+export default function ProjectTag({
+  title,
+  mainColor,
+  textColor,
+}: ProjectTypeProps) {
   return (
     <span
       style={{ background: mainColor, color: textColor }}
