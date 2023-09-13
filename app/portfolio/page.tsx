@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ProjectBlooper } from "../_components/ProjectBlooper";
 
 export default function PortfolioPage() {
   return (
@@ -9,7 +9,7 @@ export default function PortfolioPage() {
       <main className="mt-16 w-11/12 mx-auto">
         <ul className="grid text-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <li>
-            <Project
+            <ProjectBlooper
               href="/portfolio/tank"
               image="./images/tanks.png"
               title="Express  Tanks"
@@ -29,7 +29,7 @@ export default function PortfolioPage() {
             />
           </li>
           <li>
-            <Project
+            <ProjectBlooper
               href="https://imgtoascii-51d7b.web.app/"
               image="./images/imgtoascii-example.png"
               title="Image to ASCII"
@@ -44,7 +44,7 @@ export default function PortfolioPage() {
             />
           </li>
           <li>
-            <Project
+            <ProjectBlooper
               href="/portfolio/momentum"
               image="./images/momentum.png"
               title="MOMENTUM"
@@ -59,7 +59,7 @@ export default function PortfolioPage() {
             />
           </li>
           <li>
-            <Project
+            <ProjectBlooper
               href="/portfolio/chess"
               image="./images/chess.png"
               title="Chess Lite"
@@ -67,7 +67,7 @@ export default function PortfolioPage() {
             />
           </li>
           <li>
-            <Project
+            <ProjectBlooper
               href="/portfolio/yt-shorts-bot"
               image="./images/yt-shorts-bot.png"
               title="Youtube shorts bot"
@@ -92,55 +92,4 @@ export default function PortfolioPage() {
   );
 }
 
-function Project(props: any) {
-  const values = props.tag;
-  return (
-    <article className="bg-tersiary rounded-2xl text-primary transition ease-in duration-300 h-full hover:scale-102">
-      <a href={props.href}>
-        <div className="flex h-setHeight p-0">
-          <Image
-            src={"/" + props.image}
-            alt="the cover page of one of my projects that I have worked on"
-            width={1200}
-            height={1200}
-            className=" block object-cover w-full h-auto rounded-t-2xl"
-          ></Image>
-        </div>
-        <h2 className="text-2xl my-3 font-bold transition duration-500 ease-in-out hover:text-secondary">
-          {props.title}
-        </h2>
-        <p className=" opacity-70 text-lg p-1">{props.description}</p>
-        <div className="inline-flex float-left my-2 ml-2">
-          {values &&
-            values.map((value: any, index: any) => (
-              <Tag
-                key={index}
-                mainColor={value.mainColor}
-                textColor={value.textColor}
-                title={value.title}
-              />
-            ))}
-        </div>
-      </a>
-    </article>
-  );
-}
 
-function Tag({
-  title,
-  mainColor,
-  textColor,
-}: {
-  title: string;
-  mainColor: string;
-  textColor: string;
-}) {
-  return (
-    <span
-      style={{ background: mainColor, color: textColor }}
-      className={`rounded-lg flex-wrap ml-1 text-lg px-1`}
-    >
-      {title}
-    </span>
-  );
-}
