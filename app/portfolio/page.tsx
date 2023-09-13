@@ -99,7 +99,7 @@ function Project(props: any) {
       <a href={props.href}>
         <div className="flex h-setHeight p-0">
           <Image
-            src={'/'+props.image}
+            src={"/" + props.image}
             alt="the cover page of one of my projects that I have worked on"
             width={1200}
             height={1200}
@@ -126,13 +126,21 @@ function Project(props: any) {
   );
 }
 
-function Tag(props: any) {
+function Tag({
+  title,
+  mainColor,
+  textColor,
+}: {
+  title: string;
+  mainColor: string;
+  textColor: string;
+}) {
   return (
     <span
-      style={{ background: props.mainColor, color: props.textColor }}
+      style={{ background: mainColor, color: textColor }}
       className={`rounded-lg flex-wrap ml-1 text-lg px-1`}
     >
-      {props.title}
+      {title}
     </span>
   );
 }
