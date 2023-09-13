@@ -69,6 +69,26 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
+              fileName="react-native-chess"
+              image="react-native-chess.png"
+              title="Native Chess"
+              description="react-native-chess is a testament to my ability to quickly learn React Native and Firebase. It offers secure login, registration, a leaderboard, and engaging gameplay. I honed skills in TypeScript, Firebase storage, authentication, and Expo development."
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
               fileName="https://imgtoascii-51d7b.web.app/"
               image="imgtoascii-example.png"
               title="Image to ASCII"
