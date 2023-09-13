@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ProjectTag from "../_components/ProjectTag";
 type ProjectBlooperProps = {
   href: string;
@@ -11,7 +12,7 @@ export function ProjectBlooper(props: ProjectBlooperProps) {
   const values = props.tag;
   return (
     <article className="bg-tersiary rounded-2xl text-primary transition ease-in duration-300 h-full hover:scale-102">
-      <a href={props.href}>
+      <Link href={props.href}>
         <div className="flex h-setHeight p-0">
           <Image
             src={"/" + props.image}
@@ -36,7 +37,7 @@ export function ProjectBlooper(props: ProjectBlooperProps) {
               />
             ))}
         </div>
-      </a>
+      </Link>
     </article>
   );
 }

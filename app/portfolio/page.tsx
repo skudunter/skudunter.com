@@ -1,5 +1,4 @@
 import { ProjectBlooper } from "../_components/ProjectBlooper";
-
 export default function PortfolioPage() {
   return (
     <>
