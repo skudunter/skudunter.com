@@ -9,7 +9,7 @@ export default function PortfolioPage() {
         <ul className="grid text-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <li>
             <ProjectBlooper
-              href="/portfolio/tank"
+              fileName="tank"
               image="./images/tanks.png"
               title="Express  Tanks"
               description="A Multiplayer game made using node-js,express and websocket.io,complete with weappn upgrades and powerups."
@@ -29,7 +29,7 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
-              href="https://imgtoascii-51d7b.web.app/"
+              fileName="https://imgtoascii-51d7b.web.app/"
               image="./images/imgtoascii-example.png"
               title="Image to ASCII"
               description="Software that takes in an image as input and allows you to turn it into a ascii version aswell as allowing control of other settings."
@@ -44,7 +44,7 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
-              href="/portfolio/momentum"
+              fileName="momentum"
               image="./images/momentum.png"
               title="MOMENTUM"
               description="My first 3D Unity game,made by following the Brackeys tutorial and then adding some artistic touch,with procedural level generation."
@@ -59,7 +59,7 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
-              href="/portfolio/chess"
+              fileName="chess"
               image="./images/chess.png"
               title="Chess Lite"
               description="Its Chess,with a minimax algorithm as opponent."
@@ -67,7 +67,7 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
-              href="/portfolio/yt-shorts-bot"
+              fileName="yt-shorts-bot"
               image="./images/yt-shorts-bot.png"
               title="Youtube shorts bot"
               description="A script that scrapes reddit,uses text-to-speech and ffmpeg to (sometimes) create a youtube shorts format video."
