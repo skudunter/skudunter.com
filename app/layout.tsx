@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-primary'>
+      <body className='bg-primary font-Roboto'>
         <NavigationBar/>
         {children}</body>
     </html>
