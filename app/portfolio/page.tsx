@@ -59,14 +59,6 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
-              fileName="chess"
-              image="./images/chess.png"
-              title="Chess Lite"
-              description="Its Chess,with a minimax algorithm as opponent."
-            />
-          </li>
-          <li>
-            <ProjectBlooper
               fileName="yt-shorts-bot"
               image="./images/yt-shorts-bot.png"
               title="Youtube shorts bot"

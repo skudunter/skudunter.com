@@ -1,6 +1,5 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
 import NavigationBar from './_components/navigationBar';
 export const metadata: Metadata = {
   title: 'HomePage',
