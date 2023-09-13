@@ -49,6 +49,26 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
+              fileName="visometer"
+              image="visometer-title.png"
+              title="Visometer"
+              description="Visometer is a dynamic web application I crafted using Next.js, offering a deep dive into web development while creating custom API endpoints. Its primary mission is to deliver precise weather data🌊"
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
               fileName="https://imgtoascii-51d7b.web.app/"
               image="imgtoascii-example.png"
               title="Image to ASCII"
@@ -102,5 +122,3 @@ export default function PortfolioPage() {
     </>
   );
 }
-
-
