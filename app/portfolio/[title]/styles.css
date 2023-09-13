@@ -6,9 +6,6 @@
     margin-bottom: 1rem; /* Reduce bottom margin for headings */
     color: #333; /* Choose a suitable text color */
   }
-  .root{
-    
-  }
   .mainContainer h2 {
     font-size: 2rem;
     line-height: 2.5rem; /* Increase line height for readability */
