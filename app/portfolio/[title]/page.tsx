@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { marked } from "marked";
 
 export default function ProjectPage({ params }: { params: { title: string } }) {
-  return <div>{getMarkDownFileContent(params.title)}</div>;
+  return <>{getMarkDownFileContent(params.title)}</>;
 }
 
 function getMarkDownFileContent(fileName: string): ReactNode {
