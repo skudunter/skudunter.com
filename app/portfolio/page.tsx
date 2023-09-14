@@ -109,6 +109,26 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
+              fileName="velocity"
+              image="velocity.png"
+              title="Velocity"
+              description="A fully custom car physics game complete with procedural terrain generation."
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
               fileName="https://imgtoascii-51d7b.web.app/"
               image="imgtoascii-example.png"
               title="Image to ASCII"
