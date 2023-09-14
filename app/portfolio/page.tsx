@@ -89,6 +89,26 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
+              fileName="bullet"
+              image="bullet.png"
+              title="GMTK Game Jam 2023"
+              description="'Roles reversed' was the theme of the GMTK game jam this year,I built this platformer using unity where the bullets are your allies."
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
               fileName="https://imgtoascii-51d7b.web.app/"
               image="imgtoascii-example.png"
               title="Image to ASCII"
