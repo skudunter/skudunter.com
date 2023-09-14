@@ -1,5 +1,7 @@
 # Native Chess
 
+![Chess](../images/react-native-chess-chess.png)
+
 ## Introduction
 
 **React Native Chess** represents a successful experiment in my journey to master React Native and Firebase. This application includes secure login and registration functionality through Firebase, along with a leaderboard and interactive gameplay. Throughout this project, I gained valuable experience in TypeScript, Firebase storage, Firebase authentication, and Expo development.
@@ -22,3 +24,5 @@
 - [GitHub Repository](https://github.com/yourusername/react-native-chess)
 
 Feel free to explore the code on GitHub. Dive into the world of chess with React Native Chess! 🚀
+
+![Chess](../images/react-native-chess-leaderboard.png)
