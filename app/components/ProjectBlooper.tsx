@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProjectTag from "../_components/ProjectTag";
+import ProjectTag from "./ProjectTag";
 type ProjectBlooperProps = {
   fileName: string;
   image: string;

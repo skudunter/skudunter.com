@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import ContactForm from "../_components/contactForm";
+import ContactForm from "../components/contactForm";
 
 function AboutPage() {
   useEffect(() => {

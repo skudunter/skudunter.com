@@ -1,4 +1,4 @@
-import { ProjectBlooper } from "../_components/ProjectBlooper";
+import { ProjectBlooper } from "../components/ProjectBlooper";
 export default function PortfolioPage() {
   return (
     <>
