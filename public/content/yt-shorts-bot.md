@@ -8,5 +8,5 @@ I was inspired by coding with lewis to start a project purely in Node.js where t
 
 ## Links
 
-- [GitHub](https://github.com/skudunter/reddit-bot/)
+- [GitHub Repository](https://github.com/skudunter/javascript-reddit-content-creation-bot)
 - [Coding with lewis](https://www.youtube.com/watch?v=3gjcY_00U1w)

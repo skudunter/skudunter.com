@@ -17,3 +17,7 @@ This project showcases a fun and scuffed local multiplayer game featuring two ro
 - The game assets, including art and sound effects, are not created by me, but I've creatively incorporated them into this project to bring it to life.
 
 Feel free to check out the game and its code on my portfolio. Enjoy the chaotic battles and have fun exploring the codebase! 🚀
+
+## Links
+
+- [Github Repository](https://github.com/skudunter/kaboom-local-multiplayer-game)

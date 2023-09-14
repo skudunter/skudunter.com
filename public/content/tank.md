@@ -8,5 +8,5 @@ As a developer, creating a multiplayer game using Node.js, Express, and Websocke
 
 ## Links
 
-- [GitHub](https://github.com/skudunter/Express-Tanks)
+- [GitHub](https://github.com/skudunter/multiplayer-tanks-game)
 - [Node.js](https://nodejs.org/en/)
