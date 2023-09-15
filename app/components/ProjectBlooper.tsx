@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProjectTag from "./ProjectTag";
+import { ProjectTagTitle } from "./ProjectTag";
+
 type ProjectBlooperProps = {
   fileName: string;
   image: string;
   title: string;
   description: string;
-  tag?: Array<{ title: string; mainColor: string; secondaryColor?:string; textColor: string }>;
+  tag?:Array<ProjectTagTitle>;
 };
+
 export function ProjectBlooper(props: ProjectBlooperProps) {
   const values = props.tag;
   return (
@@ -34,13 +37,10 @@ export function ProjectBlooper(props: ProjectBlooperProps) {
         <p className=" opacity-70 text-lg p-1">{props.description}</p>
         <div className="inline-flex float-left my-2 ml-2">
           {values &&
-            values.map((value: any, index: any) => (
+            values.map((value: ProjectTagTitle, index: any) => (
               <ProjectTag
                 key={index}
-                mainColor={value.mainColor}
-                secondaryColor={value.secondaryColor}
-                textColor={value.textColor}
-                title={value.title}
+                title={value}
               />
             ))}
         </div>
