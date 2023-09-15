@@ -31,11 +31,11 @@ export function ProjectBlooper(props: ProjectBlooperProps) {
             className=" block object-cover w-full h-auto rounded-t-2xl"
           ></Image>
         </div>
-        <h2 className="text-2xl my-3 font-bold transition duration-500 ease-in-out hover:text-secondary">
+        <h2 className="text-2xl text-center my-3 font-bold transition duration-500 ease-in-out hover:text-secondary">
           {props.title}
         </h2>
-        <p className=" opacity-70 text-lg p-1">{props.description}</p>
-        <div className="inline-flex flex-wrap my-2 ml-2">
+        <p className=" opacity-70 text-lg text-center p-1">{props.description}</p>
+        <div className="inline-flex flex-wrap justify-start items-end p-4">
           {values &&
             values.map((value: ProjectTagTitle, index: any) => (
               <ProjectTag key={index} title={value} />

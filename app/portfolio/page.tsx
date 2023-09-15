@@ -7,7 +7,7 @@ export default function PortfolioPage() {
         <h1 className="text-white font-semibold text-5xl mt-16 ">Projects</h1>
       </header>
       <main className="mt-16 w-11/12 mx-auto">
-        <ul className="grid text-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <li>
             <ProjectBlooper
               fileName="bullet"
