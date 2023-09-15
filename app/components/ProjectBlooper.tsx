@@ -8,7 +8,7 @@ type ProjectBlooperProps = {
   image: string;
   title: string;
   description: string;
-  tag?:Array<ProjectTagTitle>;
+  tag?: Array<ProjectTagTitle>;
 };
 
 export function ProjectBlooper(props: ProjectBlooperProps) {
@@ -35,13 +35,10 @@ export function ProjectBlooper(props: ProjectBlooperProps) {
           {props.title}
         </h2>
         <p className=" opacity-70 text-lg p-1">{props.description}</p>
-        <div className="inline-flex float-left my-2 ml-2">
+        <div className="inline-flex flex-wrap my-2 ml-2">
           {values &&
             values.map((value: ProjectTagTitle, index: any) => (
-              <ProjectTag
-                key={index}
-                title={value}
-              />
+              <ProjectTag key={index} title={value} />
             ))}
         </div>
       </Link>

@@ -6,59 +6,69 @@ type ColorMapping = {
 
 const colorMappings: Record<string, ColorMapping> = {
   "node-js": {
-    mainColor: "green",
-    secondaryColor: "darkgreen",
+    mainColor: "#026e00",
+    secondaryColor: "#43853d",
     textColor: "white",
   },
   express: {
-    mainColor: "blue",
-    secondaryColor: "darkblue",
-    textColor: "white",
+    mainColor: "#0969da",
+    secondaryColor: "#259dff",
+    textColor: "#010101",
   },
   unity: {
-    mainColor: "orange",
-    secondaryColor: "darkorange",
-    textColor: "black",
+    mainColor: "black",
+    secondaryColor: "black",
+    textColor: "white",
   },
   ffmpeg: {
-    mainColor: "purple",
-    secondaryColor: "darkpurple",
-    textColor: "white",
+    mainColor: "#4cae4c",
+    secondaryColor: "#4cae4c",
+    textColor: "#242424",
   },
   "kaboom.js": {
-    mainColor: "yellow",
-    secondaryColor: "darkyellow",
-    textColor: "black",
+    mainColor: "#ef6155",
+    secondaryColor: "#fec418",
+    textColor: "#20202e",
   },
   "react.js": {
-    mainColor: "lightblue",
-    secondaryColor: "darkblue",
-    textColor: "white",
+    mainColor: "#16181d",
+    secondaryColor: "#2b303b",
+    textColor: "#149eca",
   },
   "next.js": {
-    mainColor: "gray",
-    secondaryColor: "darkgray",
-    textColor: "white",
+    mainColor: "white",
+    secondaryColor: "white",
+    textColor: "black",
   },
   firebase: {
-    mainColor: "red",
-    secondaryColor: "darkred",
+    mainColor: "#ffcb2b",
+    secondaryColor: "#f5820a",
     textColor: "white",
   },
   "react-native": {
-    mainColor: "teal",
-    secondaryColor: "darkteal",
-    textColor: "white",
+    mainColor: "#61dafb",
+    secondaryColor: "#5cbed9",
+    textColor: "#242526",
   },
   "game-jam": {
-    mainColor: "teal",
-    secondaryColor: "darkteal",
-    textColor: "white",
+    mainColor: "#772D8B",
+    secondaryColor: "#F24333",
+    textColor: "#FCF7FF",
   },
   typescript: {
-    mainColor: "teal",
-    secondaryColor: "darkteal",
+    mainColor: "#3178c6",
+    secondaryColor: "#3178c6",
     textColor: "white",
+  },
+  vite: {
+    mainColor: "#bd34fe",
+    secondaryColor: "#53b9ff",
+    textColor: "#ffc71f",
+  },
+  javaScript: {
+    mainColor: "#f7df1e",
+    secondaryColor: "#f7df1e",
+    textColor: "black",
   },
 };
 
@@ -74,6 +84,8 @@ export enum ProjectTagTitle {
   ReactNative = "react-native",
   GameJam = "game-jam",
   TypeScript = "typescript",
+  Vite = "vite",
+  JavaScript = 'javaScript'
 }
 
 type ProjectTypeProps = {
