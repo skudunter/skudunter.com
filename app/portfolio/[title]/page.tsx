@@ -7,7 +7,9 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
 }
 
 function getMarkDownFileContent(fileName: string): ReactNode {
-  const filePath: string = `./public/content/${fileName}.md`;
+  const filePath: string = process.env.ISDEPLOYED
+    ? `/content/${fileName}.md`
+    : `./public/content/${fileName}.md`;
 
   if (existsSync(filePath)) {
     const markdownContent: string = readFileSync(filePath, "utf8");
