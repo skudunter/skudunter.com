@@ -21,7 +21,7 @@
 
 ## Links
 
-- [GitHub Repository](https://github.com/yourusername/react-native-chess)
+- [GitHub Repository](https://github.com/skudunter/react-native-chess)
 
 Feel free to explore the code on GitHub. Dive into the world of chess with React Native Chess! 🚀
 

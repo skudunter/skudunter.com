@@ -17,7 +17,7 @@ function getMarkDownFileContent(fileName: string): ReactNode {
     );
   } else {
     return (
-      <div className="grid place-items-center mt-64 text-white text-5xl underline decoration-secondary">
+      <div className="grid place-items-center mt-64 text-white text-5xl font-semibold underline decoration-secondary">
         <p>File not found</p>
       </div>
     );

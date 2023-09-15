@@ -9,50 +9,10 @@ export default function PortfolioPage() {
         <ul className="grid text-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <li>
             <ProjectBlooper
-              fileName="tank"
-              image="tanks.png"
-              title="Express  Tanks"
-              description="A Multiplayer game made using node-js,express and websocket.io,complete with weappn upgrades and powerups."
-              tag={[
-                {
-                  title: "#node-js",
-                  mainColor: "#35d110",
-                  textColor: "#1f231e",
-                },
-                {
-                  title: "#express",
-                  mainColor: "grey",
-                  textColor: "black",
-                },
-              ]}
-            />
-          </li>
-          <li>
-            <ProjectBlooper
-              fileName="kaboom-multiplayer-game"
-              image="kaboom-multiplayer-game.png"
-              title="Kaboom"
-              description="Get ready to rumble in Kaboom Local Multiplayer Game, where two robots go head-to-head in explosive battles! 🤖💥"
-              tag={[
-                {
-                  title: "#node-js",
-                  mainColor: "#35d110",
-                  textColor: "#1f231e",
-                },
-                {
-                  title: "#express",
-                  mainColor: "grey",
-                  textColor: "black",
-                },
-              ]}
-            />
-          </li>
-          <li>
-            <ProjectBlooper
-              fileName="visometer"
-              image="visometer-title.png"
-              title="Visometer"
-              description="Visometer is a dynamic web application I crafted using Next.js, offering a deep dive into web development while creating custom API endpoints. Its primary mission is to deliver precise weather data🌊"
+              fileName="bullet"
+              image="bullet.png"
+              title="GMTK Game Jam 2023"
+              description="'Roles reversed' was the theme of the GMTK game jam this year,I built this platformer using unity where the bullets are your allies."
               tag={[
                 {
                   title: "#node-js",
@@ -89,30 +49,10 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
-              fileName="bullet"
-              image="bullet.png"
-              title="GMTK Game Jam 2023"
-              description="'Roles reversed' was the theme of the GMTK game jam this year,I built this platformer using unity where the bullets are your allies."
-              tag={[
-                {
-                  title: "#node-js",
-                  mainColor: "#35d110",
-                  textColor: "#1f231e",
-                },
-                {
-                  title: "#express",
-                  mainColor: "grey",
-                  textColor: "black",
-                },
-              ]}
-            />
-          </li>
-          <li>
-            <ProjectBlooper
-              fileName="velocity"
-              image="velocity.png"
-              title="Velocity"
-              description="A fully custom car physics game complete with procedural terrain generation."
+              fileName="visometer"
+              image="visometer-title.png"
+              title="Visometer"
+              description="Visometer is a dynamic web application I crafted using Next.js, offering a deep dive into web development while creating custom API endpoints. Its primary mission is to deliver precise weather data🌊"
               tag={[
                 {
                   title: "#node-js",
@@ -133,6 +73,46 @@ export default function PortfolioPage() {
               image="ballistics.png"
               title="Ballistics"
               description="A local multiplayer game made in Unity where 2 players run around and attack eachother."
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
+              fileName="velocity"
+              image="velocity.png"
+              title="Velocity"
+              description="A fully custom car physics demo complete with procedural terrain generation."
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
+              fileName="kaboom-multiplayer-game"
+              image="kaboom-multiplayer-game.png"
+              title="Kaboom"
+              description="Get ready to rumble in Kaboom Local Multiplayer Game, where two robots go head-to-head in explosive battles! 🤖💥"
               tag={[
                 {
                   title: "#node-js",
@@ -173,6 +153,26 @@ export default function PortfolioPage() {
                   title: "#unity",
                   mainColor: "Black",
                   textColor: "White",
+                },
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
+              fileName="tank"
+              image="tanks.png"
+              title="Express  Tanks"
+              description="A Multiplayer game made using node-js,express and websocket.io,complete with weappn upgrades and powerups."
+              tag={[
+                {
+                  title: "#node-js",
+                  mainColor: "#35d110",
+                  textColor: "#1f231e",
+                },
+                {
+                  title: "#express",
+                  mainColor: "grey",
+                  textColor: "black",
                 },
               ]}
             />
