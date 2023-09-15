@@ -72,7 +72,7 @@ export default function PortfolioPage() {
               fileName="react-native-chess"
               image="react-native-chess.png"
               title="Native Chess"
-              description="react-native-chess is a testament to my ability to quickly learn React Native and Firebase. It offers secure login, registration, a leaderboard, and engaging gameplay. I honed skills in TypeScript, Firebase storage, authentication, and Expo development."
+              description="Native Chess is a testament to my ability to quickly learn React Native and Firebase. It offers secure login, registration, a leaderboard, and engaging gameplay. I honed skills in TypeScript, Firebase storage, authentication, and Expo development."
               tag={[
                 {
                   title: "#node-js",

@@ -10,7 +10,7 @@ _Velocity_ is an exciting Unity game project that I developed as part of my jour
 
 ### Concept
 
-_Velocity_ is an action-packed game where players control a fast-moving object, navigating through a dynamically generated environment filled with obstacles and challenges. The game leverages procedural mesh generation to create a unique and endless gaming experience, keeping players engaged and challenged.
+_Velocity_ is an action-packed game where players control a fast-moving car, navigating through a dynamically generated environment filled with obstacles and challenges.
 
 ### Key Features
 
@@ -65,4 +65,8 @@ _Velocity_ is an action-packed game where players control a fast-moving object, 
 
 - **Application:**
   - Perlin noise mesh generation is versatile and used for terrain generation, texture creation, cloud patterns, and more in computer graphics and game development.
+
+## Links
+
+- [GitHub Repository](https://github.com/skudunter/velocity)
 
