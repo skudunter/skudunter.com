@@ -6,12 +6,12 @@ type ProjectBlooperProps = {
   image: string;
   title: string;
   description: string;
-  tag?: Array<{ title: string; mainColor: string; textColor: string }>;
+  tag?: Array<{ title: string; mainColor: string; secondaryColor?:string; textColor: string }>;
 };
 export function ProjectBlooper(props: ProjectBlooperProps) {
   const values = props.tag;
   return (
-    <article className="bg-tersiary rounded-2xl text-primary transition ease-in duration-300 h-full hover:scale-102">
+    <article className="bg-tersiary rounded-2xl text-primary shadow-mds shadow-black transition ease-in duration-300 h-full hover:scale-102">
       <Link
         href={
           props.fileName.includes("https")
@@ -38,6 +38,7 @@ export function ProjectBlooper(props: ProjectBlooperProps) {
               <ProjectTag
                 key={index}
                 mainColor={value.mainColor}
+                secondaryColor={value.secondaryColor}
                 textColor={value.textColor}
                 title={value.title}
               />

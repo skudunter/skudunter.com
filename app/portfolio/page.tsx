@@ -17,6 +17,8 @@ export default function PortfolioPage() {
                 {
                   title: "#node-js",
                   mainColor: "#35d110",
+                  secondaryColor: "#222",
+
                   textColor: "#1f231e",
                 },
                 {
