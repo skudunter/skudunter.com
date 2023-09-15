@@ -14,7 +14,7 @@ export default function PortfolioPage() {
               image="bullet.png"
               title="GMTK Game Jam 2023"
               description="'Roles reversed' was the theme of the GMTK game jam this year,I built this platformer using unity where the bullets are your allies."
-              tag={[ProjectTagTitle.Unity,ProjectTagTitle.,ProjectTagTitle.KaboomJs]}
+              tag={[ProjectTagTitle.Unity,ProjectTagTitle.GameJam,ProjectTagTitle.KaboomJs]}
             />
           </li>
           <li>
