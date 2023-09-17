@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Skudunters Portfolio',
+  description: 'The page with my portfolio on it',
+}
+
 import { ProjectBlooper } from "../components/ProjectBlooper";
 import { ProjectTagTitle } from "../components/ProjectTag";
 export default function PortfolioPage() {

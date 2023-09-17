@@ -7,7 +7,7 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
 }
 
 function getMarkDownFileContent(fileName: string): ReactNode {
-  const filePath: string = process.env.ISDEPLOYED
+  const filePath: string = process.env.ISDEPLOYED == 'true'
     ? `/content/${fileName}.md`
     : `./public/content/${fileName}.md`;
 

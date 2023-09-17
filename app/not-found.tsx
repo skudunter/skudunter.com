@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+
 export default function Page404() {
   useEffect(() => {
     var canvas: any = document.getElementById("myCanvas"),
