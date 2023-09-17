@@ -21,9 +21,6 @@ const config: Config = {
         quad: "#DA4167",
         quint: "#D3C1C3",
       },
-      fontFamily: {
-        Roboto: ["'Roboto'", "serif"],
-      },
       keyframes: {
         fadein: {
           "0%": { opacity: "0", filter: "blur(5px)" },
