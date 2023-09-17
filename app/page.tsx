@@ -124,7 +124,7 @@ function HomePage() {
   return (
     <>
       <article>
-        <span className="fixed justify-center w-full mr-10 space-x-2 flex z-10 mt-1 xs:justify-end sm:right-3 sm:bottom-3 select-none">
+        <span className="fixed justify-center w-full mr-8 space-x-2 flex z-10 mt-1 xs:justify-end xs:right-1 sm:right-3 sm:bottom-3 select-none">
           <a href="/app/pages/coming.html">
             <Image
               alt="youtube"
