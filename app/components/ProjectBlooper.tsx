@@ -14,7 +14,7 @@ type ProjectBlooperProps = {
 export function ProjectBlooper(props: ProjectBlooperProps) {
   const values = props.tag;
   return (
-    <article className="bg-tersiary rounded-2xl text-primary shadow-mds shadow-black transition ease-in duration-300 h-full hover:scale-102">
+    <article className="bg-tersiary rounded-2xl text-primary  transition ease-in duration-300 h-full hover:scale-102 hover:shadow-md hover:shadow-black">
       <Link
         href={
           props.fileName.includes("https")

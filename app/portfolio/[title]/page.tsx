@@ -10,18 +10,18 @@ function getMarkDownFileContent(fileName: string): ReactNode {
   const filePath: string = process.env.ISDEPLOYED == 'true'
     ? `/content/${fileName}.md`
     : `./public/content/${fileName}.md`;
-
-  if (existsSync(filePath)) {
+ 
+  // if (existsSync(filePath)) {
     const markdownContent: string = readFileSync(filePath, "utf8");
 
     return (
       <div dangerouslySetInnerHTML={{ __html: marked(markdownContent) }} />
     );
-  } else {
-    return (
-      <div className="grid place-items-center mt-64 text-white text-5xl font-semibold underline decoration-secondary">
-        <p>File not found</p>
-      </div>
-    );
-  }
+  // } else {
+  //   return (
+  //     <div className="grid place-items-center mt-64 text-white text-5xl font-semibold underline decoration-secondary">
+  //       <p>File not found</p>
+  //     </div>
+  //   );
+  // }
 }
