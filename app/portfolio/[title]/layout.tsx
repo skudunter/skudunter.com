@@ -1,12 +1,16 @@
 import "./styles.css";
-import type { Metadata, ResolvedMetadata } from "next";
+import type { Metadata} from "next";
 
 export async function generateMetadata(props: {
   params: { title:string };
 }): Promise<Metadata> {
   return {
     title:props.params.title.toUpperCase(),
-    description: "A project I made on my portfolio",
+    description: "A project I made on my portfolio featuring " + props.params.title.toUpperCase(),
+    alternates:{
+      canonical:`https://skudunter-com.vercel.app/portfolio/${props.params.title}`,
+      languages:{'en-US':`/en-US/https://skudunter-com.vercel.app/portfolio/${props.params.title}`}
+    }
   };
 }
 export default function RootLayout({

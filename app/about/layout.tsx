@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Skudunter",
-  description: "About me,my experience and expertise",
+  description: "Here I list my skills and technologies I have used aswell as all my job experience",
 };
 
 export default function RootLayout({

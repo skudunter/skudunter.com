@@ -10,7 +10,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Skudunters place on the web",
-  description: "My Home page",
+  description: "Skudunters home page for his personal website,providing links to all his projects",
 };
 
 export default function RootLayout({

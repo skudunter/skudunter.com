@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Skudunters Portfolio',
-  description: 'The page with my portfolio on it',
+  description: 'Skudunters page with my vibrant portfolio on it showcasing all the expertise I have acquired',
 }
 
 import { ProjectBlooper } from "../components/ProjectBlooper";
