@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {  
   return (
     <main
-      className={`mainContainer mx-auto px-20 w-full sm:w-10/12 h-auto bg-tersiary bg-opacity-70 rounded-2xl text-center text-slate-50 py-8`}
+      className={`mainContainer mx-auto px-10 w-full overflow-hidden sm:w-10/12 h-auto bg-tersiary bg-opacity-70 rounded-2xl text-center text-slate-50 py-8`}
     >
       {children}
     </main>

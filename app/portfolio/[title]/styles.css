@@ -27,6 +27,7 @@
 /* Image Styles */
 .mainContainer img {
   display: block; /* Center images */
+  width: 100%;
   margin: 0 auto;
   max-width: 100%; /* Ensure images don't overflow their containers */
   border-radius: 0.25rem; /* Slightly reduce border radius */

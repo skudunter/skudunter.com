@@ -20,7 +20,7 @@ function NavigationBar() {
   const location = usePathname();
   return (
     <>
-   <header className="py-1 sm:py-6 bg-primary text-white ">
+   <header className="py-1 sm:py-6 bg-primary text-white overflow-hidden">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex sm:flex-row justify-between items-center">
     <div className="flex items-center">
       <Link href="/" className="text-2xl sm:text-4xl font-semibold">
