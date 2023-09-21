@@ -11,7 +11,7 @@ function getMarkDownFileContent(fileName: string): ReactNode {
   const isDeployed = process.env.ISDEPLOYED === 'true';
   const basePath = isDeployed ? '/content' : './content';
   const filePath = path.join(process.cwd(), basePath, `${fileName}.md`);
-
+ 
   if (existsSync(filePath)) {
     const markdownContent = readFileSync(filePath, 'utf8');
 
