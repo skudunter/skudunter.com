@@ -11,6 +11,12 @@ export async function generateMetadata(props: {
       canonical:`https://skudunter-com.vercel.app/portfolio/${props.params.title}`,
       languages:{'en-US':`/en-US/https://skudunter-com.vercel.app/portfolio/${props.params.title}`}
     }
+    ,twitter:{
+      card:"summary_large_image",
+      title:props.params.title.toUpperCase(),
+      description:"A project I made on my portfolio featuring " + props.params.title.toUpperCase(),
+      creator:'@skudunter',
+    }
   };
 }
 export default function RootLayout({
