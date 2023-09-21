@@ -103,7 +103,7 @@ export default function ProjectTag({ title }: ProjectTypeProps) {
         })`,
         color: textColor,
       }}
-      className={`rounded-lg ml-1 text-lg px-2 font-mono`}
+      className={`rounded-lg ml-1 mt-1 text-lg px-2 font-mono`}
     >
       #{title}
     </span>
