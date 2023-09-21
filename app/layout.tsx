@@ -9,12 +9,31 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Skudunters place on the web",
-  description: "Skudunters home page for his personal website,providing links to all his projects",
-  verification:{
-    google:''
+  generator: "Next.js",
+  applicationName: "skudunter.com",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "skudunter",
+    "skudunter.com",
+    "portfolio",
+    "web developer",
+    "cape town",
+  ],
+  authors: { name: "daniel", url: "https://skudunter.com" },
+  colorScheme: "dark",
+  creator: "Skudunter",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
-  category:'portfolio'
+  title: "Skudunters place on the web",
+  description:
+    "Skudunters home page for his personal website,providing links to all his projects",
+  verification: {
+    google: "",
+  },
+
 };
 
 export default function RootLayout({

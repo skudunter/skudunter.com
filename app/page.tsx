@@ -124,11 +124,11 @@ function HomePage() {
   return (
     <>
       <article>
-        <span className="fixed justify-center w-full mr-8 space-x-2 flex z-10 mt-1 xs:justify-end xs:right-1 sm:right-3 sm:bottom-3 select-none">
+        <span className="fixed justify-begin w-full mr-8 space-x-2 flex z-10 mt-1 sm:justify-end sm:right-3 sm:bottom-3 select-none">
           <a href="/app/pages/coming.html">
             <Image
               alt="youtube"
-              className="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-20 sm:h-20"
+              className="w-12 h-12 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-20 sm:h-20"
               src="../images/youtube.svg"
               width={600}
               height={600}
@@ -137,7 +137,7 @@ function HomePage() {
           <a href="https://github.com/skudunter">
             <Image
               alt="github"
-              className="w-10 h-10 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-20 sm:h-20"
+              className="w-12 h-12 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-20 sm:h-20"
               src="../images/github.svg"
               width={600}
               height={600}
@@ -146,7 +146,7 @@ function HomePage() {
           <a href="https://skudunter.itch.io/">
             <Image
               alt="itch.io"
-              className="w-7 h-7 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16 mt-2"
+              className="w-9 h-9 opacity-70 transition ease-in-out hover:opacity-100 duration-500 hover:scale-125 sm:w-16 sm:h-16 mt-2"
               src="../images/itchio-textless-white.svg"
               width={600}
               height={600}
