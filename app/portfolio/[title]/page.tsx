@@ -9,7 +9,7 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
 
 function getMarkDownFileContent(fileName: string): ReactNode {
   const isDeployed = process.env.ISDEPLOYED === 'true';
-  const basePath = isDeployed ? '/content' : './public/content';
+  const basePath = isDeployed ? '/content' : './content';
   const filePath = path.join(process.cwd(), basePath, `${fileName}.md`);
 
   if (existsSync(filePath)) {
