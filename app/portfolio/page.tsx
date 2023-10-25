@@ -1,9 +1,10 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Skudunters Portfolio',
-  description: 'Skudunters page with my vibrant portfolio on it showcasing all the expertise I have acquired',
-}
+  title: "Skudunters Portfolio",
+  description:
+    "Skudunters page with my vibrant portfolio on it showcasing all the expertise I have acquired",
+};
 
 import { ProjectBlooper } from "../components/ProjectBlooper";
 import { ProjectTagTitle } from "../components/ProjectTag";
@@ -21,7 +22,7 @@ export default function PortfolioPage() {
               image="bullet.png"
               title="GMTK Game Jam 2023"
               description="'Roles reversed' was the theme of the GMTK game jam this year,I built this platformer using unity where the bullets are your allies."
-              tag={[ProjectTagTitle.Unity,ProjectTagTitle.GameJam]}
+              tag={[ProjectTagTitle.Unity, ProjectTagTitle.GameJam]}
             />
           </li>
           <li>
@@ -30,7 +31,11 @@ export default function PortfolioPage() {
               image="react-native-chess.png"
               title="Native Chess"
               description="Native Chess is a testament to my ability to quickly learn React Native and Firebase. It offers secure login, registration, a leaderboard, and engaging gameplay. I honed skills in TypeScript, Firebase storage, authentication, and Expo development."
-              tag={[ProjectTagTitle.TypeScript,ProjectTagTitle.ReactNative,ProjectTagTitle.Firebase]}
+              tag={[
+                ProjectTagTitle.TypeScript,
+                ProjectTagTitle.ReactNative,
+                ProjectTagTitle.Firebase,
+              ]}
             />
           </li>
           <li>
@@ -39,6 +44,19 @@ export default function PortfolioPage() {
               image="visometer-title.png"
               title="Visometer"
               description="Visometer is a dynamic web application I crafted using Next.js, offering a deep dive into web development while creating custom API endpoints. Its primary mission is to deliver precise weather data🌊"
+              tag={[
+                ProjectTagTitle.NextJs,
+                ProjectTagTitle.TypeScript,
+                ProjectTagTitle.ReactJs,
+              ]}
+            />
+          </li>{" "}
+          <li>
+            <ProjectBlooper
+              fileName="bread-people"
+              image="bread-people-title.png"
+              title="The Bread People"
+              description="A website made for selling bread complete with an admin page powered by a sqllite3 db and custom fully secured API endpoints🔥"
               tag={[ProjectTagTitle.NextJs,ProjectTagTitle.TypeScript,ProjectTagTitle.ReactJs]}
             />
           </li>
@@ -66,7 +84,7 @@ export default function PortfolioPage() {
               image="kaboom-multiplayer-game.png"
               title="Kaboom"
               description="Get ready to rumble in Kaboom Local Multiplayer Game, where two robots go head-to-head in explosive battles! 🤖💥"
-              tag={[ProjectTagTitle.KaboomJs,ProjectTagTitle.Vite]}
+              tag={[ProjectTagTitle.KaboomJs, ProjectTagTitle.Vite]}
             />
           </li>
           <li>
@@ -93,7 +111,7 @@ export default function PortfolioPage() {
               image="tanks.png"
               title="Express  Tanks"
               description="A Multiplayer game made using node-js,express and websocket.io,complete with weappn upgrades and powerups."
-              tag={[ProjectTagTitle.Express,ProjectTagTitle.NodeJs]}
+              tag={[ProjectTagTitle.Express, ProjectTagTitle.NodeJs]}
             />
           </li>
           <li>
@@ -102,7 +120,7 @@ export default function PortfolioPage() {
               image="yt-shorts-bot.png"
               title="Youtube shorts bot"
               description="A script that scrapes reddit,uses text-to-speech and ffmpeg to (sometimes) create a youtube shorts format video."
-              tag={[ProjectTagTitle.FFMpeg,ProjectTagTitle.NodeJs]}
+              tag={[ProjectTagTitle.FFMpeg, ProjectTagTitle.NodeJs]}
             />
           </li>
         </ul>
