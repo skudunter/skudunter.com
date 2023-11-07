@@ -123,7 +123,7 @@ export default function ContactForm() {
           placeholder="Name"
           value={formData.name}
           onChange={handleInputChange}
-          className={`w-full px-2 py-1 text-primary rounded-sm focus:outline-none ${
+          className={`w-full px-2 py-1 text-white  rounded-sm focus:outline-none ${
             formData.sent ? "border-secondary border-4" : ""
           } ${formErrors.nameError ? "border-4 border-quad" : ""}`}
         />
@@ -140,7 +140,7 @@ export default function ContactForm() {
           placeholder="somebody@example.com"
           value={formData.email}
           onChange={handleInputChange}
-          className={`w-full px-2 py-1 text-primary rounded-sm focus:outline-none ${
+          className={`w-full px-2 py-1 text-white rounded-sm focus:outline-none ${
             formData.sent ? "border-secondary border-4" : ""
           } ${formErrors.emailError ? "border-4 border-quad" : ""}`}
         />
@@ -156,7 +156,7 @@ export default function ContactForm() {
           placeholder="Message"
           value={formData.message}
           onChange={handleInputChange}
-          className={`w-full px-2 py-1 text-primary rounded-sm focus:outline-none ${
+          className={`w-full px-2 py-1 text-white rounded-sm focus:outline-none ${
             formData.sent ? "border-secondary border-4" : ""
           } ${formErrors.messageError ? "border-4 border-quad" : ""}`}
           maxLength={50}

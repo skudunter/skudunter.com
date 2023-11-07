@@ -125,7 +125,7 @@ function AboutPage() {
             p5.js, crafting robust backends with Node.js and SQL, or developing
             engaging games with C#, .Net, and Unity, I&apos;m always up for a
             challenge. And when it comes to styling, I&apos;ve got you covered
-            with my knowledge of CSS, Tailwind, and HTML. From Delphi to Pascal,
+            with my knowledge of CSS, Tailwind, and HTML. From Delphi to Typescript,
             I&apos;ve got the skills to bring your projects to life!
           </p>
           <br></br>
@@ -155,7 +155,21 @@ function AboutPage() {
               delay={100}
               animateIn="animate-scrollIn"
             >
+              <li>typescript</li>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              animateOnce
+              delay={100}
+              animateIn="animate-scrollIn"
+            >
               <li>react.js</li>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              animateOnce
+              delay={100}
+              animateIn="animate-scrollIn"
+            >
+              <li>next.js</li>
             </AnimationOnScroll>
             <AnimationOnScroll
               animateOnce
