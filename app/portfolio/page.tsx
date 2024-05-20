@@ -27,6 +27,19 @@ export default function PortfolioPage() {
           </li>
           <li>
             <ProjectBlooper
+              fileName="fiziks"
+              image="fiziks.png"
+              title="Physics Engine"
+              description="A simple physics simulation using Verlet, implements projectile collisions,rigidbodies and spring physics."
+              tag={[
+                ProjectTagTitle.TypeScript,
+                ProjectTagTitle.Vite,
+                ProjectTagTitle.Simulation,
+              ]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
               fileName="react-native-chess"
               image="react-native-chess.png"
               title="Native Chess"
@@ -57,9 +70,14 @@ export default function PortfolioPage() {
               image="bread-people-title.png"
               title="The Bread People"
               description="A website made for selling bread complete with an admin page powered by a sqllite3 db and custom fully secured API endpoints🔥"
-              tag={[ProjectTagTitle.NextJs,ProjectTagTitle.TypeScript,ProjectTagTitle.ReactJs]}
+              tag={[
+                ProjectTagTitle.NextJs,
+                ProjectTagTitle.TypeScript,
+                ProjectTagTitle.ReactJs,
+              ]}
             />
           </li>
+          
           <li>
             <ProjectBlooper
               fileName="ballistics"
@@ -85,6 +103,18 @@ export default function PortfolioPage() {
               title="Kaboom"
               description="Get ready to rumble in Kaboom Local Multiplayer Game, where two robots go head-to-head in explosive battles! 🤖💥"
               tag={[ProjectTagTitle.KaboomJs, ProjectTagTitle.Vite]}
+            />
+          </li>
+          <li>
+            <ProjectBlooper
+              fileName="noita-sand-sim"
+              image="react-native-chess.png"
+              title="Sand Simulation"
+              description="A simple sand simulation made using python and pygame,inspired by the game Noita. Implements cellular automata and particle physics. It simulates water and sand particles."
+              tag={[
+                ProjectTagTitle.Python,
+                ProjectTagTitle.Simulation
+              ]}
             />
           </li>
           <li>

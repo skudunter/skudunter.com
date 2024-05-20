@@ -70,6 +70,16 @@ const colorMappings: Record<string, ColorMapping> = {
     secondaryColor: "#f7df1e",
     textColor: "black",
   },
+  simulation: {
+    mainColor: "black",
+    secondaryColor: "green",
+    textColor: "#08d903",
+  },
+  python: {
+    mainColor: "#ffd752",
+    secondaryColor: "#ffd752",
+    textColor: "#1e425e ",
+  },
 };
 
 export enum ProjectTagTitle {
@@ -85,7 +95,9 @@ export enum ProjectTagTitle {
   GameJam = "game-jam",
   TypeScript = "typescript",
   Vite = "vite",
-  JavaScript = 'javaScript'
+  JavaScript = "javaScript",
+  Simulation = "simulation",
+  Python = "python",
 }
 
 type ProjectTypeProps = {
