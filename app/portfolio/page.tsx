@@ -77,7 +77,18 @@ export default function PortfolioPage() {
               ]}
             />
           </li>
-          
+          <li>
+            <ProjectBlooper
+              fileName="noita-sand-sim"
+              image="noita-sand-sim.png"
+              title="Sand Simulation"
+              description="A simple sand simulation made using python and pygame,inspired by the game Noita. Implements cellular automata and particle physics. It simulates water and sand particles."
+              tag={[
+                ProjectTagTitle.Python,
+                ProjectTagTitle.Simulation
+              ]}
+            />
+          </li>
           <li>
             <ProjectBlooper
               fileName="ballistics"
@@ -105,18 +116,7 @@ export default function PortfolioPage() {
               tag={[ProjectTagTitle.KaboomJs, ProjectTagTitle.Vite]}
             />
           </li>
-          <li>
-            <ProjectBlooper
-              fileName="noita-sand-sim"
-              image="react-native-chess.png"
-              title="Sand Simulation"
-              description="A simple sand simulation made using python and pygame,inspired by the game Noita. Implements cellular automata and particle physics. It simulates water and sand particles."
-              tag={[
-                ProjectTagTitle.Python,
-                ProjectTagTitle.Simulation
-              ]}
-            />
-          </li>
+         
           <li>
             <ProjectBlooper
               fileName="https://imgtoascii-51d7b.web.app/"
